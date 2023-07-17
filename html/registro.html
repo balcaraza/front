@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="C:\Users\88459\OneDrive\Escritorio\APP\css/styleregistro.css" />
+  </head>
+
+  <body>
+    
+        <section class="container">
+          <h2><header>REGISTRO</header></h2>
+          <form action="#" class="form">
+            <div class="input-box">
+              <label>NOMBRE O RAZÓN SOCIAL</label>
+              <input type="text" placeholder="Ingrese su nombre o razón social" required />
+            </div>
+
+            <div class="input-box">
+              <label>CORREO ELECTRÓNICO</label>
+              <input type="email" placeholder="ejemplo@rostrohumano.com.mx" required />
+            </div>
+
+            <div class="column">
+              <div class="input-box">
+                <label>TELÉFONO</label>
+                <input type="number" placeholder="Teléfono o celular a 10 digitos" required />
+              </div>
+              <div class="input-box">
+                <label>Fecha de nacimiento o de registro</label>
+                <input type="date" placeholder="Ingrese fecha" required />
+              </div>
+            </div>
+            <div class="gender-box">
+              <h3>¿Para qué función le interesa registrarse?</h3>
+              <div class="gender-option">
+                <div class="gender">
+                  <input type="radio" id="check-donador" name="funcion" checked />
+                  <label for="check-donador">Donador</label>
+                </div>
+                <div class="gender">
+                  <input type="radio" id="check-donatario" name="funcion" />
+                  <label for="check-donatario">Donatario</label>
+                </div>
+                <div class="gender">
+                  <input type="radio" id="check-other" name="funcion" />
+                  <label for="check-other">Otra</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-box address">
+              <label>CONTRASEÑA (Incluye números,minúsculas y mayúsculas)</label>
+              <input type="password" pattern="[a-zA-Z0-9]{8,15}" placeholder="Ingresa contraseña de al menos 8 caracteres" required />
+              <input type="password" placeholder="Repite contraseña" required />
+            </div>
+            
+            <a href="index.html"><button :hover type="submit" name="Registrar">¡Registrarse!</button></a>
+            
+            </form>
+        </section>
+
+  </body>
+</html>
