@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="C:\Users\88459\OneDrive\Escritorio\APP\css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     
   </head>
   <body>
@@ -106,7 +106,7 @@
               <h2 class="product-description">FORMULARIO</h2>
 
               <div class="input-box">
-                <label>NOMBRE O RAZÓN SOCIAL</label>
+                <label>Nombre o Razón Social</label>
                 <input id="nomRazSoc" name="nomRazSoc" type="text" required />
               </div>
       
@@ -114,8 +114,147 @@
                 <label>RFC</label>
                 <input id="rfc" name="rfc" type="text" pattern="{12,13}"required />
               </div>
+
+            <div class="input-box">
+              <label>Siglas o Acrónimo</label>
+              <input id="acronimo" name="acronimo" type="text" required />
             </div>
 
+            <div class="input-box">
+              <label>Figura Juridica</label>
+              <input id="figuraLegal" name="figuraLegal" type="text" required />
+            </div>
+
+            <div class="input-box">
+              <label>Domicilio Legal (calle)</label>
+              <input id="domicilioLegal" name="domicilioLegal" type="text" required />
+            </div>
+
+            <div class="input-box">
+              <label>Número exterior</label>
+              <input id="numExterior" name="numExterior" type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>Número interior</label>
+              <input id="numInterior" name="numInterior" type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>Colonia</label>
+              <input id="colonia" name="colonia" type="text" required />
+            </div>
+
+            <div class="input-box">
+              <label>Entre la calle</label>
+              <input id="calle1" name="calle1" type="text" required />
+            </div>
+            <div class="input-box">
+              <label>y la calle</label>
+              <input id="calle2" name="calle2" type="text" required />
+            </div>
+
+            <div class="input-box">
+              <label>Alcaldia</label>
+              <input id="alcaldia" name="alcaldia" type="text" required />
+            </div>
+
+            <div class="input-box">
+              <label>Codigo Postal</label>
+              <input id="codigoPostal" name="codigoPostal" type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>Correo electronico</label>
+              <input id="correoElec" name="correoElec" type="email" required />
+            </div>
+
+            <div class="input-box">
+              <label>Pagina web</label>
+              <input id="pagWeb" name="pagWeb" type="text" required />
+            </div>
+            <!--TODO agregar id a  base de datos de telefono 1 y 2-->
+            <div class="input-box">
+              <label>Telefono 1</label>
+              <input id="#" name="#" type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>Telefono 2</label>
+              <input id="#" name="#" type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>Número de escritura del<br> acta constitutiva original</label>
+              <input id="numDeEscritura" name="numDeEscritura " type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>De fecha</label>
+              <input id="fecha" name="fecha" type="date" required />
+            </div>
+
+            <div class="input-box">
+              <label>Número de notaria</label>
+              <input id="numDeNotaria" name="numDeNotaria" type="number" required />
+            </div>
+            <!--TODO corregir id de nombre de notario en base de datos-->
+            <div class="input-box">
+              <label>Nombre del notario</label>
+              <input id="numDeNotario" name="numDeNotario" type="text" required />
+            </div>
+
+            <div class="input-box">
+              <label>Número de inscripción en el Registro Público</label>
+              <input id="numInsResPub" name="numDeNotario" type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>Fecha de inscripción en el Registro Publico</label>
+              <input id="fechInsResPub" name="fechInsResPub" type="date" required />
+            </div>
+
+            <div class="input-box">
+              <label>Fecha de primera autorización<br> para expedir recibos deducibles</label>
+              <input id="fechPriAutExpRecDed" name="fechPriAutExpRecDed" type="date" required />
+            </div>
+
+            <div class="input-box">
+              <label>Fecha reciente del Diario Oficial <br>donde aparece como donataria autorizada</label>
+              <input id="fechRecDiaOfi" name="fechRecDiaOfi" type="date" required />
+            </div>
+
+            <div class="input-box">
+              <label>Nombre del representante<br> legal de la institución que tenga facultad vigente para suscribir convenios</label>
+              <input id="nom" name="nom" type="text" required placeholder="Nombre(s)"/>
+              <input id="apellPaterno" name="apellPaterno" type="text" required placeholder="Apellido Paterno"/>
+              <input id="apellMate" name="apellMate" type="text" required placeholder="Apellido Materno"/>
+            </div>
+
+            <div class="input-box">
+              <label>Cargo que desempeña</label>
+              <input id="cargDesemp" name="cargDesemp" type="text" required />
+            </div>
+
+            <div class="input-box">
+              <label>Número de escritura del poder<br> del representante legal</label>
+              <input id="NumEscrPoderRepreLeg" name="NumEscrPoderRepreLeg" type="number" required />
+            </div>
+
+            <div class="input-box">
+              <label>De fecha:</label>
+              <input id="fechaEscr" name="fechaEscr" type="date" required />
+            </div>
+
+            <div class="input-box">
+              <label>Numero de notaria</label>
+              <input id="numNotaria" name="numNotaria" type="date" required />
+            </div>
+
+
+            </div>
+            
+            
          </form>
           <!-- Termina Formulario -->
         </div>
@@ -131,7 +270,7 @@
 
     <!-- Scripts -->
     <!-- Custom JS -->
-    <script src="C:\Users\88459\OneDrive\Escritorio\APP\js/scripts.js"></script>
+    <script src="front/scripts.js"></script>
 
   </body>
 </html>
