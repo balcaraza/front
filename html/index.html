@@ -82,182 +82,260 @@
           <h1>DATOS GENERALES</h1>
         </div>
 
-        <div class="main-cards">
+        <!--menu pestañas-->
+        <div class="menu">
 
-          <div class="card">
-            <div class="card-inner">
-              <h2>Información de la Institución</h2>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <h2>Integrantes de la Institución</h2>
-            </div>
-          </div>
+          <p data-target="#contacto">Datos de contacto</p>
+          <p data-target="#infoGeneral">Formulario complementario</p>
+          <p data-target="#pagina">Página web y redes sociales</p>
+          <p data-target="#modelo">Modelo de atención</p>
+          <p data-target="#datosDir">Datos del Director General y representante legal</p>
+          <p data-target="#organo">Organo de gobierno</p>
+          <p data-target="#datosDes">Datos descriptivos</p>
+          <p data-target="#fuentes">Fuentes de financiamiento y patrimonio</p>
+          <p data-target="#desgloseBenef">Desglose del numero de beneficiarios</p>
+          <p data-target="#desgloseColab">Desglose del numero de colaboradores</p>
+          <p data-target="#voluntariado">Voluntariado</p>
+          <p data-target="#redes">Redes, logros y reconocimientos</p>
+          <p data-target="#adjuntos">Documentos adjuntos</p>
 
         </div>
 
-        <div class="caja-form">
-          <!-- Empieza Formulario -->
-          <form>
+        <!--termina menu pestañas-->
 
-            <div class="product-card">
-              <h2 class="product-description">FORMULARIO</h2>
+        <div class="content">
+          
+          <div data-content id="contacto" class="active">
+            <form>
 
-              <div class="input-box">
-                <label>Nombre o Razón Social</label>
-                <input id="nomRazSoc" name="nomRazSoc" type="text" required />
+              <div class="product-card">
+                <h2 class="product-description">FORMULARIO</h2>
+  
+                <div class="input-box">
+                  <label>Nombre de la persona encargada de llenar el formulario</label>
+                  <input id="" name="" type="text" required />
+                </div>
+        
+                <div class="input-box">
+                  <label>Correo electrónico de la persona encargada de llenar el formulario</label>
+                  <input id="" name="" type="text" required />
+                </div>
+  
+                <div class="input-box">
+                <label>Puesto de la persona encarga de llenar el formulario</label>
+                <input id="" name="" type="text" required />
+                </div>
+  
+                <div class="input-box">
+                  <label>Telefono institucional y extensión de la persona encargada de llenar el formulario.<label>
+                  <input id="" type="number" name="" placeholder="Telefono (55)-12-23-45-56"> 
+                </div>
+    
               </div>
-      
-              <div class="input-box">
-                <label>RFC</label>
-                <input id="rfc" name="rfc" type="text" pattern="{12,13}"required />
+           </form>
+          </div>
+
+          <div data-content id="infoGeneral">
+            <form>
+              <div class="product-card">
+                <h2 class="product-description">FORMULARIO 2</h2>
+  
+                <div class="input-box2">
+                  <label>Fecha en que inició actividades</label>
+                  <input id="fechaIniAct" name="fechaIniAct" type="date" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Fecha en que inició actividades relacionadas con el proyecto presentado</label>
+                  <input id="fechaIniProy" name="fechaIniProy" type="date" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Objeto social</label>
+                  <input id="objSoc" name="objSoc" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Misión <br> Propósito para el que fue creada la institucion, su razon de ser ante la comunidad</label>
+                  <input id="mision" name="mision" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Visión <br> Expresión de como visualizan la institución que quieren llegar a ser</label>
+                  <input id="vision" name="vision" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Ultima fecha que se revisó y/o modificó la planeación estratégica institucional</label>
+                  <input id="ultFecha" name="ultFecha" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Señale los objetivos de desarrollo sostenible y las metas de los mismos que se apegan a su trabajo instituciónal</label>
+                  <input id="objDes" name="objDes" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Señale los objetivos de desarrollo sostenible y las metas de los mismos que se apegan a su trabajo instituciónal</label>
+                  <input id="objDes" name="objDes" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Señale las lineas de acción y lo sobjetivos institucionales</label>
+                  <input id="linAcc" name="linAcc" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Enumere los reconocimientos, registros</label>
+                  <input id="regs" name="regs" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Breve historia de la institución</label>
+                  <input id="histInst" name="histInst" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Metas.<br> Que quiere lograr la institución en el:</label>
+                  <input id="metCort" name="metCort" type="text" required placeholder="Corto plazo"/>
+                  <input id="metMed" name="metMed" type="text" required placeholder="Mediano plazo"/>
+                  <input id="metLargt" name="metLarg" type="text" required placeholder="Largo plazo"/>
+                </div>
+  
+                <div class="input-box2">
+                  <label>Explique la necesidad o problemática social que atiende la institución</label>
+                  <input id="necSoc" name="necSoc" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Cómo influye en la solución de la problemática social</label>
+                  <input id="solProb" name="solProb" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Describa los servicios que ofrece su institución</label>
+                  <input id="servInst" name="servInst" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Con que instalaciones cuenta para ofrecer los servicios. Propias, rentadas o en comodato</label>
+                  <input id="instPrServ" name="instPrServ" type="text" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Cuenta con programa de protección civil</label>
+                  <label><input id="prgrmProtCiv" type="radio" name="prgrmProtCiv" value="prgrmProtCiv-si"> Si</label>
+                  <label><input id="prgrmProtCiv" type="radio" name="prgrmProtCiv" value="prgrmProtCiv-no"> No</label>
+                </div>
+  
+                <div class="input-box2">
+                  <label>Fecha de aprobación</label>
+                  <input id="FechaAprv" name="FechaAprv" type="date" required />
+                </div>
+  
+                <div class="input-box2">
+                  <label>Describa la experiencia previa en proyectos similares al presentado (incluya si ya fue beneficiada en años anteriores, cuales fueron sus
+                    resultados por año)</label>
+                  <input id="expPrev" name="expPrev" type="text" required />
+                </div>
+                <div class="input-box2">
+                  <label>Describa los tres principales proyectos que actualmente lleva a cabo la institución</label>
+                  <!--TODO correcion de id en base de datos no puede ir sin espacios-->
+                  <input id="expPrev-1" name="expPrev-1" type="text" required placeholder="Proyecto 1"/>
+                  <input id="expPrev-2" name="expPrev-2" type="text" required placeholder="Proyecto 2"/>
+                  <input id="expPrev-2" name="expPrev-3" type="text" required placeholder="Proyecto 3"/>
+                </div>
+  
+                <div class="input-box2">
+                  <label>Poblacion beneficiada en 2021</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Niños (0-5 años)</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Niñas (0-5 años)</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Niños (6-12 años)</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Niñas (6-12 años)</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Jovenes hombres (13-18 años)</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Jovenes mujeres (13-18 años)</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Total</label>
+                  <label><input id="#" type="number" name="#" value="#edad" required >Familias</label>
+                </div>
+                <div class="input-box2">
+                  <label>Zona</label>
+                  <label><input id="#" type="radio" name="#" value="urbana" >Urbana</label>
+                  <label><input id="#" type="radio" name="#" value="semiurbana" >Semiurbana</label>
+                  <label><input id="#" type="radio" name="#" value="rural">Rural</label>
+                </div>
+  
+                <div class="input-box2">
+                  <label>Nivel socioeconómico</label>
+                  <!--TODO verificar id y name-->
+                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="alto">Alto</label>
+                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="medio">Medio</label>
+                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="bajo">Bajo</label>
+                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="muybajo">Muy Bajo</label>
+                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="pobreza">Pobreza extrema</label>
+                </div>
+  
+                <div class="input-box2">
+                  <label>Lugar donde se ubica la población</label>
+                  <input id="lugPob" type="text" name="lugPob" required >
+                </div>
+  
+                <div class="input-box2">
+                  <label>Cómo identidica a los beneficiarios y cúales son los requisitos de ingreso que deben cumplir para recibir los servicios</label>
+                  <input id="idBenReq" type="text" name="idBenReq" required >
+                </div>
+  
+                <div class="input-box2">
+                  <label>Personal que labora en la institución</label> <!--Verificar que sea campo requerido-->
+                  <input id="persnlInst" type="text" name="persnlInst" required >
+                </div>
+  
+                <div class="input-box2">
+                  <label>Numero de empleados remunerados</label>
+                  <input id="numEmp" type="number" name="numEmp" required >
+                </div>
+  
+                <div class="input-box2">
+                  <label>Numero de personas voluntarias</label>
+                  <input id="numVol" type="number" name="numVol" required >
+                </div>
+  
+                <div class="input-box2">
+                  <label>Total de personal</label>
+                  <input id="totPersns" type="number" name="totPersns" required >
+                </div>
+  
+                <div class="input-box2">
+                  <label>Montos del ejercicio 2021<br></label>
+                  <label>Ingresos<input id="ingresos" type="number" name="ingresos" required ></label>
+                  <label>Egresos<input id="egresos" type="number" name="egresos" required ></label>
+                  <label>Remanente<input id="remanente" type="number" name="remanente" required ></label>
+                </div>
+                <div class="input-box2">
+                  <label>Explique de manera puntual, cómo se logrará la permanencia de la institución en el tiempo. Cuales son los recursos, infraestructura,
+                    relaciones institucionales, arraigo social, financiamiento, etc., con que cuenta para darle continuidad.
+                  </label>
+                  <input id="expPermns" type="text" name="expPermns" required >
+                </div>
+  
               </div>
+            </form>
 
-            <div class="input-box">
-              <label>Siglas o Acrónimo</label>
-              <input id="acronimo" name="acronimo" type="text" required />
-            </div>
+          </div>
+          <div data-content id="pagina"></div>
+          <div data-content id="modelo"></div>
+          <div data-content id="datosDir"></div>
+          <div data-content id="organo"></div>
+          <div data-content id="datosDes"></div>
+          <div data-content id="fuentes"></div>
+          <div data-content id="desgloseBenef"></div>
+          <div data-content id="desgloseColab"></div>
+          <div data-content id="voluntariado"></div>
+          <div data-content id="redes"></div>
+          <div data-content id="adjuntos"></div>
 
-            <div class="input-box">
-              <label>Figura Juridica</label>
-              <input id="figuraLegal" name="figuraLegal" type="text" required />
-            </div>
-
-            <div class="input-box">
-              <label>Domicilio Legal (calle)</label>
-              <input id="domicilioLegal" name="domicilioLegal" type="text" required />
-            </div>
-
-            <div class="input-box">
-              <label>Número exterior</label>
-              <input id="numExterior" name="numExterior" type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>Número interior</label>
-              <input id="numInterior" name="numInterior" type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>Colonia</label>
-              <input id="colonia" name="colonia" type="text" required />
-            </div>
-
-            <div class="input-box">
-              <label>Entre la calle</label>
-              <input id="calle1" name="calle1" type="text" required />
-            </div>
-            <div class="input-box">
-              <label>y la calle</label>
-              <input id="calle2" name="calle2" type="text" required />
-            </div>
-
-            <div class="input-box">
-              <label>Alcaldia</label>
-              <input id="alcaldia" name="alcaldia" type="text" required />
-            </div>
-
-            <div class="input-box">
-              <label>Codigo Postal</label>
-              <input id="codigoPostal" name="codigoPostal" type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>Correo electronico</label>
-              <input id="correoElec" name="correoElec" type="email" required />
-            </div>
-
-            <div class="input-box">
-              <label>Pagina web</label>
-              <input id="pagWeb" name="pagWeb" type="text" required />
-            </div>
-            <!--TODO agregar id a  base de datos de telefono 1 y 2-->
-            <div class="input-box">
-              <label>Telefono 1</label>
-              <input id="#" name="#" type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>Telefono 2</label>
-              <input id="#" name="#" type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>Número de escritura del<br> acta constitutiva original</label>
-              <input id="numDeEscritura" name="numDeEscritura " type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>De fecha</label>
-              <input id="fecha" name="fecha" type="date" required />
-            </div>
-
-            <div class="input-box">
-              <label>Número de notaria</label>
-              <input id="numDeNotaria" name="numDeNotaria" type="number" required />
-            </div>
-            <!--TODO corregir id de nombre de notario en base de datos-->
-            <div class="input-box">
-              <label>Nombre del notario</label>
-              <input id="numDeNotario" name="numDeNotario" type="text" required />
-            </div>
-
-            <div class="input-box">
-              <label>Número de inscripción en el Registro Público</label>
-              <input id="numInsResPub" name="numDeNotario" type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>Fecha de inscripción en el Registro Publico</label>
-              <input id="fechInsResPub" name="fechInsResPub" type="date" required />
-            </div>
-
-            <div class="input-box">
-              <label>Fecha de primera autorización<br> para expedir recibos deducibles</label>
-              <input id="fechPriAutExpRecDed" name="fechPriAutExpRecDed" type="date" required />
-            </div>
-
-            <div class="input-box">
-              <label>Fecha reciente del Diario Oficial <br>donde aparece como donataria autorizada</label>
-              <input id="fechRecDiaOfi" name="fechRecDiaOfi" type="date" required />
-            </div>
-
-            <div class="input-box">
-              <label>Nombre del representante<br> legal de la institución que tenga facultad vigente para suscribir convenios</label>
-              <input id="nom" name="nom" type="text" required placeholder="Nombre(s)"/>
-              <input id="apellPaterno" name="apellPaterno" type="text" required placeholder="Apellido Paterno"/>
-              <input id="apellMate" name="apellMate" type="text" required placeholder="Apellido Materno"/>
-            </div>
-
-            <div class="input-box">
-              <label>Cargo que desempeña</label>
-              <input id="cargDesemp" name="cargDesemp" type="text" required />
-            </div>
-
-            <div class="input-box">
-              <label>Número de escritura del poder<br> del representante legal</label>
-              <input id="NumEscrPoderRepreLeg" name="NumEscrPoderRepreLeg" type="number" required />
-            </div>
-
-            <div class="input-box">
-              <label>De fecha:</label>
-              <input id="fechaEscr" name="fechaEscr" type="date" required />
-            </div>
-
-            <div class="input-box">
-              <label>Numero de notaria</label>
-              <input id="numNotaria" name="numNotaria" type="date" required />
-            </div>
-
-
-            </div>
-            
-            
-         </form>
-          <!-- Termina Formulario -->
         </div>
+
+
 
         <div class="main-pie">
           <!-- Foto de pie de pagina -->
@@ -270,7 +348,7 @@
 
     <!-- Scripts -->
     <!-- Custom JS -->
-    <script src="front/scripts.js"></script>
+    <script src="scripts.js"></script>
 
   </body>
 </html>
