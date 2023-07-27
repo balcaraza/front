@@ -116,26 +116,32 @@
 
               <div class="product-card">
                 <h2 class="product-description">Datos de contacto</h2>
+                <h3>Los campos con un * son obligatorios</h3>
   
                 <div class="input-box">
-                  <label>Nombre de la persona encargada de llenar el formulario</label>
+                  <label>Nombre de la persona encargada de llenar el formulario. *</label>
                   <input id="" name="" type="text" required />
                 </div>
         
                 <div class="input-box">
-                  <label>Correo electrónico de la persona encargada de llenar el formulario</label>
+                  <label>Correo electrónico de la persona encargada de llenar el formulario. *</label>
                   <input id="" name="" type="text" required />
                 </div>
   
                 <div class="input-box">
-                <label>Puesto de la persona encarga de llenar el formulario</label>
+                <label>Puesto de la persona encarga de llenar el formulario. *</label>
                 <input id="" name="" type="text" required />
                 </div>
   
                 <div class="input-box">
-                  <label>Telefono institucional y extensión de la persona encargada de llenar el formulario.<label>
-                  <input id="" type="number" name="" placeholder="Telefono (55)-12-23-45-56"> 
+                  <label>Telefono institucional y extensión de la persona encargada de llenar el formulario. *<label>
+                  <input id="" type="number" name="" pattern="[0-9]{1,10}" placeholder="Telefono (55)-12-23-45-56" required> 
+                  <input id="" type="number" name="" pattern="[0-9]{1,4}" placeholder="Extensión 7535" required> 
                 </div>
+                <div class="send-button">
+                  <button :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+                
     
               </div>
            </form>
