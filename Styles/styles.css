@@ -211,6 +211,7 @@ body {
   background-image: linear-gradient( 115deg, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0.726) ),url(resources/manos.jpeg);
 }
 
+
 /*titulo formulario*/
 .product-description {
   padding-top: 0;
@@ -221,26 +222,40 @@ body {
 .product-button > .material-icons-outlined {
   font-size: 50px;
 }
+.input-box3{
+  width: 30%;
+  padding: 10px;
+  display: inline-block;
+  margin: 15px;
+  box-sizing: border-box;
+}
+.input-box3 label{
+  /* position: relative;*/
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 10px 0px;
+ }
+ /*entrada de datos*/
+ .input-box3 input{
+ /*position: relative;*/
+   display: block;
+   margin: 15px;
+   border-radius: 10px;
+   height: 40px;
+   width: 250px;
+   border-color: green;
+   background-color: rgb(241, 236, 236);
+  }
 
-/* caja etiqueta-input*/
+/* input box dos columnas */
 .input-box{
- width: 40%;
+ width: 45%;
   padding: 10px;
   display: inherit;
   margin: 15px 10px 15px 10px;
 }
 
-/*etiqueta*/
-.input-box label, input{
-  
- /* text-align: center;
- display: block;
- margin-left: auto;
- margin-right: auto;*/
- 
-
-
-}
 .input-box label{
  /* position: relative;*/
  font-size: 16px;
@@ -248,20 +263,37 @@ body {
  padding-bottom: 3px;
  margin: 10px 0px;
 }
-
 /*entrada de datos*/
-.input-box input{
+.input-box .texto{
 /*position: relative;*/
   display: block;
   margin: 15px;
   border-radius: 10px;
   height: 40px;
-  width: 359px;
+  width: 250px;
   border-color: green;
   background-color: rgb(241, 236, 236);
 }
+.input-box .radio{
+  display: inline;
+}
+.send{
+  align-items: center;
+  display: flex;
+}
 .send-button{
-  font-size: 18px;
+  height: 55px;
+  width: 50%;
+  color: #6615b1;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto ;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(251, 255, 0); 
 }
 
 
