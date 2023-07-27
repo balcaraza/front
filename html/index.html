@@ -49,27 +49,32 @@
         <ul class="sidebar-list">
           <li class="sidebar-list-item">
             <a href="index.html">
-              <span class="material-icons-outlined">dashboard</span> Datos Generales
+              <span class="material-icons-outlined">dashboard</span> Informacón General
             </a>
           </li>
           <li class="sidebar-list-item">
             <a href="index2.html">
-              <span class="material-icons-outlined">email</span> Solicitud de proyectos
+              <span class="material-icons-outlined">email</span> Formulario Complementario
             </a>
           </li>
           <li class="sidebar-list-item">
             <a href="#">
-              <span class="material-icons-outlined">leaderboard</span> Reporte de Gastos
+              <span class="material-icons-outlined">leaderboard</span> Convocatorias
             </a>
           </li>
           <li class="sidebar-list-item">
             <a href="#">
-              <span class="material-icons-outlined">poll</span> Consulta de Proyectos
+              <span class="material-icons-outlined">poll</span> Mis Proyectos
             </a>
           </li>
           <li class="sidebar-list-item">
             <a href="#">
-              <span class="material-icons-outlined">forum</span> Convocatorias
+              <span class="material-icons-outlined">forum</span> Anexos y Contactos
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">forum</span> Donativos Especiales
             </a>
           </li>
         </ul>
@@ -79,25 +84,26 @@
       <!-- Main -->
       <main class="main-container">
         <div class="main-title">
-          <h1>DATOS GENERALES</h1>
+          <h1>INFORMACION GENERAL</h1>
         </div>
 
         <!--menu pestañas-->
-        <div class="menu">
 
-          <p data-target="#contacto">Datos de contacto</p>
-          <p data-target="#infoGeneral">Formulario complementario</p>
-          <p data-target="#pagina">Página web y redes sociales</p>
-          <p data-target="#modelo">Modelo de atención</p>
-          <p data-target="#datosDir">Datos del Director General y representante legal</p>
-          <p data-target="#organo">Organo de gobierno</p>
-          <p data-target="#datosDes">Datos descriptivos</p>
-          <p data-target="#fuentes">Fuentes de financiamiento y patrimonio</p>
-          <p data-target="#desgloseBenef">Desglose del numero de beneficiarios</p>
-          <p data-target="#desgloseColab">Desglose del numero de colaboradores</p>
-          <p data-target="#voluntariado">Voluntariado</p>
-          <p data-target="#redes">Redes, logros y reconocimientos</p>
-          <p data-target="#adjuntos">Documentos adjuntos</p>
+        <div class="main-cards">
+
+          <p class="card" data-target="#contacto">Datos de contacto</p>
+          <p class="card" data-target="#infoGeneral">Información General</p>
+          <p class="card" data-target="#pagina">Página web y redes sociales</p>
+          <p class="card" data-target="#modelo">Modelo de atención</p>
+          <p class="card" data-target="#datosDir">Datos del Director General y representante legal</p>
+          <p class="card" data-target="#organo">Organo de gobierno</p>
+          <p class="card" data-target="#datosDes">Datos descriptivos</p>
+          <p class="card" data-target="#fuentes">Fuentes de financiamiento y patrimonio</p>
+          <p class="card" data-target="#desgloseBenef">Desglose del numero de beneficiarios</p>
+          <p class="card" data-target="#desgloseColab">Desglose del numero de colaboradores</p>
+          <p class="card" data-target="#voluntariado">Voluntariado</p>
+          <p class="card" data-target="#redes">Redes, logros y reconocimientos</p>
+          <p class="card" data-target="#adjuntos">Documentos adjuntos</p>
 
         </div>
 
@@ -109,7 +115,7 @@
             <form>
 
               <div class="product-card">
-                <h2 class="product-description">FORMULARIO</h2>
+                <h2 class="product-description">Datos de contacto</h2>
   
                 <div class="input-box">
                   <label>Nombre de la persona encargada de llenar el formulario</label>
@@ -135,202 +141,163 @@
            </form>
           </div>
 
+          <!--FORMULARIO INFORMACION GENERAL-->
           <div data-content id="infoGeneral">
-            <form>
+            <form> 
               <div class="product-card">
-                <h2 class="product-description">FORMULARIO 2</h2>
+                <h2 class="product-description">Información General</h2>
   
-                <div class="input-box2">
-                  <label>Fecha en que inició actividades</label>
-                  <input id="fechaIniAct" name="fechaIniAct" type="date" required />
-                </div>
-  
-                <div class="input-box2">
-                  <label>Fecha en que inició actividades relacionadas con el proyecto presentado</label>
-                  <input id="fechaIniProy" name="fechaIniProy" type="date" required />
+                <div class="input-box">
+                  <label>RFC de la institución</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Objeto social</label>
-                  <input id="objSoc" name="objSoc" type="text" required />
+                <div class="input-box">
+                  <label>CLUNI de la institución</label>
+                  <input id="" name="" type="text"/>
                 </div>
   
-                <div class="input-box2">
-                  <label>Misión <br> Propósito para el que fue creada la institucion, su razon de ser ante la comunidad</label>
-                  <input id="mision" name="mision" type="text" required />
+                <div class="input-box">
+                  <label>Nombre legal de la institución</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Visión <br> Expresión de como visualizan la institución que quieren llegar a ser</label>
-                  <input id="vision" name="vision" type="text" required />
+                <div class="input-box">
+                  <label>Figura juridica</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Ultima fecha que se revisó y/o modificó la planeación estratégica institucional</label>
-                  <input id="ultFecha" name="ultFecha" type="text" required />
+                <div class="input-box">
+                  <label>Estado de la República</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Señale los objetivos de desarrollo sostenible y las metas de los mismos que se apegan a su trabajo instituciónal</label>
-                  <input id="objDes" name="objDes" type="text" required />
+                <div class="input-box">
+                  <label>Nombre informal de la institución</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Señale los objetivos de desarrollo sostenible y las metas de los mismos que se apegan a su trabajo instituciónal</label>
-                  <input id="objDes" name="objDes" type="text" required />
+                <div class="input-box">
+                  <label>Esquema de atención</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Señale las lineas de acción y lo sobjetivos institucionales</label>
-                  <input id="linAcc" name="linAcc" type="text" required />
+                <div class="input-box">
+                  <label>Condiciones de la población atendida</label>
+                  <input id="" name="" type="" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Enumere los reconocimientos, registros</label>
-                  <input id="regs" name="regs" type="text" required />
+                <div class="input-box">
+                  <label>Genero de la poblacion atendida</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Breve historia de la institución</label>
-                  <input id="histInst" name="histInst" type="text" required />
+                <div class="input-box">
+                  <label>Fecha de constitución legal</label>
+                  <input id="" name="" type="date" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Metas.<br> Que quiere lograr la institución en el:</label>
-                  <input id="metCort" name="metCort" type="text" required placeholder="Corto plazo"/>
-                  <input id="metMed" name="metMed" type="text" required placeholder="Mediano plazo"/>
-                  <input id="metLargt" name="metLarg" type="text" required placeholder="Largo plazo"/>
+                <div class="input-box">
+                  <label>FEcha de primera autorizacion de la SHCP para emitir recibos deducibles de impuestos</label>
+                  <input id="" name="" type="date" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Explique la necesidad o problemática social que atiende la institución</label>
-                  <input id="necSoc" name="necSoc" type="text" required />
+                <div class="input-box">
+                  <label>Direccion de la sede principal:</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Cómo influye en la solución de la problemática social</label>
-                  <input id="solProb" name="solProb" type="text" required />
+                <div class="input-box">
+                  <label>Horario de la sede principal</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Describa los servicios que ofrece su institución</label>
-                  <input id="servInst" name="servInst" type="text" required />
+                <div class="input-box">
+                  <label>Ademas de la sede principal, ¿Cuántos centros de operacion tiene su intitución?</label>
+                  <input id="" name="" type="text" required />
                 </div>
   
-                <div class="input-box2">
-                  <label>Con que instalaciones cuenta para ofrecer los servicios. Propias, rentadas o en comodato</label>
-                  <input id="instPrServ" name="instPrServ" type="text" required />
+                <div class="input-box">
+                  <label>Anote la dirección de los diferentes centros de operacion</label>
+                  <input id="" name="" type="text" placeholder="Ejemplo:<br> Centro 1 y Direccion 1<br>Centro 2 y dirección 2"/>
                 </div>
   
-                <div class="input-box2">
-                  <label>Cuenta con programa de protección civil</label>
-                  <label><input id="prgrmProtCiv" type="radio" name="prgrmProtCiv" value="prgrmProtCiv-si"> Si</label>
-                  <label><input id="prgrmProtCiv" type="radio" name="prgrmProtCiv" value="prgrmProtCiv-no"> No</label>
+                <div class="input-box">
+                  <label>Especifique los horarios de atencion a beneficiarios por centro de operación</label>
+                  <input id="" name="" type="text"/>
                 </div>
-  
-                <div class="input-box2">
-                  <label>Fecha de aprobación</label>
-                  <input id="FechaAprv" name="FechaAprv" type="date" required />
-                </div>
-  
-                <div class="input-box2">
-                  <label>Describa la experiencia previa en proyectos similares al presentado (incluya si ya fue beneficiada en años anteriores, cuales fueron sus
-                    resultados por año)</label>
-                  <input id="expPrev" name="expPrev" type="text" required />
-                </div>
-                <div class="input-box2">
-                  <label>Describa los tres principales proyectos que actualmente lleva a cabo la institución</label>
-                  <!--TODO correcion de id en base de datos no puede ir sin espacios-->
-                  <input id="expPrev-1" name="expPrev-1" type="text" required placeholder="Proyecto 1"/>
-                  <input id="expPrev-2" name="expPrev-2" type="text" required placeholder="Proyecto 2"/>
-                  <input id="expPrev-2" name="expPrev-3" type="text" required placeholder="Proyecto 3"/>
-                </div>
-  
-                <div class="input-box2">
-                  <label>Poblacion beneficiada en 2021</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Niños (0-5 años)</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Niñas (0-5 años)</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Niños (6-12 años)</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Niñas (6-12 años)</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Jovenes hombres (13-18 años)</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Jovenes mujeres (13-18 años)</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Total</label>
-                  <label><input id="#" type="number" name="#" value="#edad" required >Familias</label>
-                </div>
-                <div class="input-box2">
-                  <label>Zona</label>
-                  <label><input id="#" type="radio" name="#" value="urbana" >Urbana</label>
-                  <label><input id="#" type="radio" name="#" value="semiurbana" >Semiurbana</label>
-                  <label><input id="#" type="radio" name="#" value="rural">Rural</label>
-                </div>
-  
-                <div class="input-box2">
-                  <label>Nivel socioeconómico</label>
-                  <!--TODO verificar id y name-->
-                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="alto">Alto</label>
-                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="medio">Medio</label>
-                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="bajo">Bajo</label>
-                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="muybajo">Muy Bajo</label>
-                  <label><input id="nivSocEc" type="radio" name="nivSocEc" value="pobreza">Pobreza extrema</label>
-                </div>
-  
-                <div class="input-box2">
-                  <label>Lugar donde se ubica la población</label>
-                  <input id="lugPob" type="text" name="lugPob" required >
-                </div>
-  
-                <div class="input-box2">
-                  <label>Cómo identidica a los beneficiarios y cúales son los requisitos de ingreso que deben cumplir para recibir los servicios</label>
-                  <input id="idBenReq" type="text" name="idBenReq" required >
-                </div>
-  
-                <div class="input-box2">
-                  <label>Personal que labora en la institución</label> <!--Verificar que sea campo requerido-->
-                  <input id="persnlInst" type="text" name="persnlInst" required >
-                </div>
-  
-                <div class="input-box2">
-                  <label>Numero de empleados remunerados</label>
-                  <input id="numEmp" type="number" name="numEmp" required >
-                </div>
-  
-                <div class="input-box2">
-                  <label>Numero de personas voluntarias</label>
-                  <input id="numVol" type="number" name="numVol" required >
-                </div>
-  
-                <div class="input-box2">
-                  <label>Total de personal</label>
-                  <input id="totPersns" type="number" name="totPersns" required >
-                </div>
-  
-                <div class="input-box2">
-                  <label>Montos del ejercicio 2021<br></label>
-                  <label>Ingresos<input id="ingresos" type="number" name="ingresos" required ></label>
-                  <label>Egresos<input id="egresos" type="number" name="egresos" required ></label>
-                  <label>Remanente<input id="remanente" type="number" name="remanente" required ></label>
-                </div>
-                <div class="input-box2">
-                  <label>Explique de manera puntual, cómo se logrará la permanencia de la institución en el tiempo. Cuales son los recursos, infraestructura,
-                    relaciones institucionales, arraigo social, financiamiento, etc., con que cuenta para darle continuidad.
-                  </label>
-                  <input id="expPermns" type="text" name="expPermns" required >
-                </div>
-  
+
               </div>
             </form>
-
           </div>
-          <div data-content id="pagina"></div>
-          <div data-content id="modelo"></div>
+
+          <!--FORMULARIO PAGINA WEB Y REDES SOCIALES-->
+          <div data-content id="pagina">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Pagina web y redes sociales</h2>
+
+                <div class="input-box">
+                  <label>¿Cuenta con pagina web?</label>
+                  <label>Si<input id="" type="radio" name="" value="si"></label>
+                  <label>No<input id="" type="radio" name="" value="no"></label>
+                </div>
+                <div class="input-box">
+                  <label>Dirección de pagina web</label>
+                  <input id="" type="url" name="" placeholder="www.ejemplo.com.mx" >
+                </div>
+
+                <div class="input-box">
+                  <label>¿Cuenta con Twitter?</label>
+                  <label>Si<input id="" type="radio" name="" value="si"></label>
+                  <label>No<input id="" type="radio" name="" value="no"></label>
+                </div>
+                <div class="input-box">
+                  <label>Dirección de twitterl</label>
+                  <input id="" type=" url" name="" placeholder="twwiter.com/usuario" >
+                </div>
+                <div class="input-box">
+                  <label>¿Cuenta con Facebook?</label>
+                  <label>Si<input id="" type="radio" name="" value="si"></label>
+                  <label>No<input id="" type="radio" name="" value="no"></label>
+                </div>
+                <div class="input-box">
+                  <label>Dirección de Facebook</label>
+                  <input id="" type="url" name="" placeholder="facebook.com/pagina" >
+                </div>
+
+                <div class="input-box">
+                  <label>Datos de otras redes sociales (YouTube, Instagram, etc.)</label>
+                  <input id="" type="text" name="" >
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+          <!--MODELO ATENCION-->
+          <div data-content id="modelo">
+            <form> 
+
+            </form>
+          </div>
+
           <div data-content id="datosDir"></div>
+
           <div data-content id="organo"></div>
+
           <div data-content id="datosDes"></div>
+
           <div data-content id="fuentes"></div>
+
           <div data-content id="desgloseBenef"></div>
+
           <div data-content id="desgloseColab"></div>
+
           <div data-content id="voluntariado"></div>
+
           <div data-content id="redes"></div>
+
           <div data-content id="adjuntos"></div>
 
         </div>
