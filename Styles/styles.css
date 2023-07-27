@@ -201,13 +201,14 @@ body {
 /*---------------------- formularios --------------------------- */
  /* caja del form*/
 .product-card {
+  width: 100%;
   border-color: aliceblue;
   display: inline-block;
   /*height: 350px;*/
   padding: 25px;
   border-radius: 30px;
   box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient( 115deg, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0.726) ),url(manos.jpeg);
+  background-image: linear-gradient( 115deg, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0.726) ),url(resources/manos.jpeg);
 }
 
 /*titulo formulario*/
@@ -223,29 +224,37 @@ body {
 
 /* caja etiqueta-input*/
 .input-box{
-  width: 100%;
+ width: 40%;
   padding: 10px;
-  display: inline-block;
+  display: inherit;
   margin: 15px 10px 15px 10px;
 }
 
 /*etiqueta*/
-.input-box label{
-  text-align: center;
+.input-box label, input{
+  
+ /* text-align: center;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;*/
+ 
 
+
+}
+.input-box label{
+ /* position: relative;*/
 }
 
 /*entrada de datos*/
 .input-box input{
-
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+/*position: relative;*/
+ display: block;
+/*
   border-radius: 10px;
   height: 30px;
   width: 300px;
   border-color: green;
-  background-color: rgb(241, 236, 236);
+  background-color: rgb(241, 236, 236);*/
 }
 
 
@@ -265,7 +274,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 50px;
-  background-image: url(hands.jpg);
+  background-image: url(resources/hands.jpg);
   padding-bottom: 150px;
 }
 
