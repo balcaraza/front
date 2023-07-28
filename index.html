@@ -287,26 +287,760 @@
             </form>
           </div>
 
-          <!--MODELO ATENCION-->
-          <div data-content id="modelo">
-            <form> 
 
+<!--FORMULARIO PAGINA WEB Y REDES SOCIALES-->
+          <div data-content id="pagina">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Pagina web y redes sociales</h2>
+
+                <div class="input-box">
+                  <label>¿Cuenta con pagina web?</label><br><br>
+                  <label>Si<input class="radio" id="" type="radio" name="" value="si"></label>
+                  <label>No<input class="radio"id="" type="radio" name="" value="no"></label>
+                </div>
+                <div class="input-box">
+                  <label>Dirección de pagina web</label>
+                  <input class="texto" id="" type="url" name="" placeholder="www.ejemplo.com.mx" >
+                </div>
+
+                <div class="input-box">
+                  <label>¿Cuenta con Twitter?</label><br><br>
+                  <label>Si<input class="radio" id="" type="radio" name="" value="si"></label>
+                  <label>No<input class="radio" id="" type="radio" name="" value="no"></label>
+                </div>
+                <div class="input-box">
+                  <label>Dirección de twitterl</label>
+                  <input class="texto" id="" type=" url" name="" placeholder="twwiter.com/usuario" >
+                </div>
+                <div class="input-box">
+                  <label>¿Cuenta con Facebook?</label><br><br>
+                  <label >Si<input class="radio" id="" type="radio" name="" value="si"></label>
+                  <label >No<input class="radio" id="" type="radio" name="" value="no"></label>
+                </div>
+                <div class="input-box">
+                  <label>Dirección de Facebook</label>
+                  <input class="texto" id="" type="url" name="" placeholder="facebook.com/pagina" >
+                </div>
+
+                <div class="input-box">
+                  <label>Datos de otras redes sociales (YouTube, Instagram, etc.)</label>
+                  <input class="texto" id="" type="text" name="" >
+                </div>
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
             </form>
           </div>
 
-          <div data-content id="datosDir"></div>
+          <!--FORMULARIO Modelo de atencion-->
+          <div data-content id="modelo">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Modelo de atención</h2>
 
-          <div data-content id="organo"></div>
+                <div class="input-box">
+                  <label>Adjunte el modelo de atención de la institución (Documento en PDF)</label>
+                  <input id="modeAten" name="modeAten" type="file" required />
+                </div>
+        
+                <div class="input-box">
+                  
+                  <label>Ingrese nombre de cada programa de la institución:</label>
+                  <textarea class="texto" name="nomProgra" id="nomProgra" rows="6" cols="40" required></textarea>
+                  
+                </div>
+    
+                <div class="input-box">
+                  <label>Perfil de ingreso de beneficiarios</label>
+                  <textarea class="texto" name="perfilIngreso" id="perfilIngreso" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                    <label>Edad de ingreso minima</label>
+                    <input class="texto" id="edadMinIng" name="edadMinIng" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                    <label>Edad de ingreso máxima</label>
+                    <input class="texto" id="edadMaxIng" name="edadMaxIng" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>perfil de egreso de beneficiarios</label>
+                  <textarea class="texto" name="perfilEgreso" id="perfilEgreso" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                    <label>Edad de egreso minima</label>
+                    <input class="texto" id="edadMinEgre" name="edadMinEgre" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                    <label>Edad de egreso máxima</label>
+                    <input class="texto" id="edadMaxEgre" name="edadMaxEgre" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                    <label>¿De dónde son canalizados?</label>
+                    <input class="texto" id="canalizados" name="canalizados" type="text" required />
+                </div>
+    
+                <div class="input-box">
+                    <label>Otro, ¿Cuál?</label>
+                    <input class="texto" id="otro" name="otro" type="text" required />
+                </div>
 
-          <div data-content id="datosDes"></div>
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
 
-          <div data-content id="fuentes"></div>
+              </div>
+            </form>
+          </div>
 
-          <div data-content id="desgloseBenef"></div>
 
-          <div data-content id="desgloseColab"></div>
+                    <!--FORMULARIO Datos del Director General y representante legal-->
+          <div data-content id="datosDir">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Datos del Director General y representante legal</h2>
 
-          <div data-content id="voluntariado"></div>
+                <div class="input-box3"> 
+                  <label>Nombre completo del Director General</label>
+                  <input  id="nomDirec" name="nomDirec" type="text" required />
+                </div>
+        
+                <div class="input-box3">
+                  <label>Correo electrónico del Director General</label>
+                  <input   id="correoElecDir" name="correoElecDir" type="email" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Teléfono del Director General</label>
+                  <input   id="telDirec" name="telDirec" type="text" required />
+                </div>
+    
+                <div class="input-box">
+                    <label>Adjunte identificación oficial del Director General</label>
+                    <input id="IdentiDirec" name="IdentiDirec" type="file" required />
+                </div>
+                <br>
+    
+                <div class="input-box3">
+                    <label>Nombre completo del representante legal</label>
+                    <input  id="nomRepLe" name="nomRepLe" type="text" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Puesto en la institución del representante legal</label>
+                  <input  id="PuestoRepLe" name="PuestoRepLe" type="text" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Teléfono del representante legal</label>
+                  <input  id="telRepLe" name="telRepLe" type="tel" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Adjunte identificación oficial del representante legal</label>
+                  <input id="identiRepLe" name="identiRepLe" type="file" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Adjunte poder del representante legal</label>
+                  <input id="poderRepLe" name="poderRepLe" type="file" required />
+                </div>
+
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+
+                              <!--FORMULARIO Organo de gobierno-->
+          <div data-content id="organo">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Datos del Director General y representante legal</h2>
+
+                <div class="input-box">
+                  <label for="consejoPatronato">¿Cuenta con consejo o patronato?</label>
+                  <select id="consejoPatrona" name="consejoPatrona" required>
+                      <option value="">Seleccione una opción</option>
+                      <option value="SI">Si</option>
+                      <option value="No">No</option>
+                  </select>
+                </div>
+    
+                <div class="input-box">
+                  <label>Nombres y posiciones de todos los consejeros</label>
+                  <textarea  class="texto" name="nomPosci" id="nomPosci" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>¿Con que frecuencia se reúnen?</label>
+                  <input  class="texto"  id="frecuencia" name="frecuencia" type="text" required />
+                </div>
+    
+                
+                <div class="input-box">
+                  <label>Si cuenta con manual, adjúntelo</label>
+                  <input  class="texto"  id="manual" name="manual" type="file" required />
+                </div>
+
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+                                        <!--FORMULARIO Datos descriptivos-->
+          <div data-content id="datosDes">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Datos descriptivos</h2>
+
+                <div class="input-box">
+                  <label>Adjunte organigrama de la institución</label>
+                  <input id="organigrama" name="organigrama" type="file" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Misión de la institución</label>
+                  <textarea  class="texto"  name="mision" id="mision" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>Visión de la institución</label>
+                  <textarea  class="texto"  name="vision" id="vision" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>Objetivos de la institución</label>
+                  <textarea  class="texto"  name="objetivos" id="objetivos" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>Origen y breve historiade la institución</label>
+                  <textarea  class="texto"  name="origenHistoria" id="origenHistoria" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>Principales alianzas de la institución</label>
+                  <textarea  class="texto"  name="princRazoInst" id="princRazoInst" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <h3>Adjuntar, en pdf, estado de resultados y balance general de los últimos 3 años</h3>
+                
+                <div class="input-box">
+                  <label>Estado de resultados 1</label>
+                  <input id="estRes1" name="estRes1" type="file" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Balance general 1</label>
+                  <input id="balance1" name="balance1" type="file" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Estado de resultados 2</label>
+                  <input id="estRes2" name="estRes2" type="file" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Balance general 2</label>
+                  <input id="balance2" name="balance2" type="file" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Estado de resultados 3</label>
+                  <input id="estRes3" name="estRes3" type="file" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Balance general 3</label>
+                  <input id="balance3" name="balance3" type="file" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Ingresos totales del año inmediato anterior (en pesos mexicanos)</label>
+                  <input   id="" name="" type="text" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Egresos totales del año inmediato anterior (en pesos mexicanos)</label>
+                  <input   id="" name="" type="text" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Costo por beneficiario del año inmediato anterior</label>
+                  <input class="texto"  id="" name="" type="text" required />
+                </div>
+
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+
+                                        <!--FORMULARIO Fuentes de financiamiento y patrimonio-->
+          <div data-content id="fuentes">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Fuentes de financiamiento y patrimonio</h2>
+
+                <h3>División por región (nacionales e internacionales)</h3>
+                <div class="input-box">
+                  <label>Porcentaje de ingresos de fuentes internacionales</label>
+                  <input  class="texto"  id="porcIngInter" name="porcIngInter" type="number" required placeholder="%" />
+                  
+                </div>
+    
+                <div class="input-box">
+                  <label>Porcentaje de ingresos de fuentes nacionales</label>
+                  <input  class="texto"  id="porIngNac" name="porIngNac" type="number" required placeholder="%" />
+                  
+                </div>
+    
+                <h3>División por tipo de donantes</h3>
+    
+                
+                <div class="input-box3"> 
+                  <label>Porcentaje de ingresos de personas físicas</label>
+                  <input  id="porcIngPerFis" name="porcIngPerFis" type="number" required placeholder="%" />
+                  
+                </div>
+    
+    
+                <div class="input-box3"> 
+                  <label>Porcentaje de ingresos de personas morales</label>
+                  <input  id="porIngPerMor" name="porIngPerMor" type="number" required placeholder="%" />
+                  
+                </div>
+    
+                <div class="input-box3"> 
+                  <label>Porcentaje de ingresos de fuentes gubernamentales</label>
+                  <input  id="porIngFueGub" name="porIngFueGub" type="number" required placeholder="%" />
+                  
+                </div>
+    
+                <div class="input-box3"> 
+                  <label>Porcentaje de ingresos de cuotas de recuperación de beneficiarios</label>
+                  <input  id="porIngCuotas" name="porIngCuotas" type="number" required placeholder="%" />
+                  
+                </div>
+    
+                <div class="input-box3"> 
+                  <label>Porcentaje de ingresos de venta de productos y servicios</label>
+                  <input  id="porIngVenPro" name="porIngVenPro" type="number" required placeholder="%" />
+                  
+                </div>
+    
+                <div class="input-box3"> 
+                  <label>Porcentaje de ingresos de otras fuentes de financiamiento</label>
+                  <input  id="porIngFueFin" name="porIngFueFin" type="number" required placeholder="%" />
+                  
+                </div>
+    
+                <h3>Patrimonio de la organización</h3>
+    
+                <div class="input-box3"> 
+                  <label>¿La institución cuenta con patrimonio en inmuebles?</label>
+                  <select id="insPatInm" name="insPatInm" required>
+                      <option value="">Seleccione una opción</option>
+                      <option value="SI">Si</option>
+                      <option value="No">No</option>
+                  </select>
+                </div>
+    
+                <div class="input-box3"> 
+                  <label>¿La institución cuenta con fondo patrimonial?</label>
+                  <select id="insFondoPat" name="insFondoPat" required>
+                      <option value="">Seleccione una opción</option>
+                      <option value="SI">Si</option>
+                      <option value="No">No</option>
+                  </select>
+                </div>
+    
+                <div class="input-box3"> 
+                  <label>A qué porcentaje de los egresos anuales equivale el fondo patrimonial?</label>
+                  <input  class="texto"  id="porEgreAnua" name="porEgreAnua" type="number" required placeholder="%" />
+                  
+                </div>
+
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+
+                                        <!--FORMULARIO Desglose del número de beneficiarios-->
+          <div data-content id="desgloseBenef">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Desglose del número de beneficiarios</h2>
+
+                <div class="input-box">
+                  <label>Capacidad de atención</label>
+                  <input  class="texto"  id="capAten" name="capAten" type="text" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Número total de beneficiarios que atiende actualmente la institución (Este campo se determina automáticamente con el llenado de las celdas de abajo)</label>
+                  <input id="numTotBen" name="numTotBen" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Femenino de 0 a 5 años</label>
+                  <input  class="texto"  id="fem0to5" name="fem0to5" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Femenino de 6 a 12 años</label>
+                  <input  class="texto"  id="fem6to12" name="fem6to12" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Femenino de 13 a 18 años</label>
+                  <input class="texto"  id="fem13to18" name="fem13to18" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Femenino de 19 a 25 años</label>
+                  <input class="texto"  id="fem19to25" name="fem19to25" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Masculino de 0 a 5 años</label>
+                  <input  class="texto" id="masc0to5" name="masc0to5" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Masculino de 6 a 12 años</label>
+                  <input  class="texto" id="masc6to12" name="masc6to12" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Masculino de 13 a 18 años</label>
+                  <input  class="texto" id="masc13to18" name="masc13to18" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Masculino de 19 a 25 años</label>
+                  <input class="texto"  id="masc19to25" name="masc19to25" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Número total de padres o tutores que atiende actualmente la institución (Este campo se determina automáticamente con el llenado de las celdas de abajo)</label>
+                  <input id="numTotTut" name="numTotTut" type="number" required />
+                </div>
+                <br>
+    
+                <div class="input-box3">
+                  <label>Madres o tutoras de 18 a 29 años</label>
+                  <input   id="tuta18to29" name="tuta18to29" type="number" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Madres o tutoras de 30 a 59 años</label>
+                  <input   id="tuta30to59" name="tuta30to59" type="number" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Madres o tutoras mayor de 60 años</label>
+                  <input   id="tuta60oMas" name="tuta60oMas" type="number" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Padres o tutores de 18 a 29 años</label>
+                  <input  id="tuto18to29" name="tuto18to29" type="number" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Padres o tutores de 30 a 59 años</label>
+                  <input  class="texto" id="tuto30to59" name="tuto30to59" type="number" required />
+                </div>
+    
+                <div class="input-box3">
+                  <label>Padres o tutores mayor de 60 años</label>
+                  <input  id="tuto60oMas" name="tuto60oMas" type="number" required />
+                </div>
+
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+
+                                                        <!--FORMULARIO Desglose del número de colaboradores-->
+          <div data-content id="desgloseColab">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Desglose del número de colaboradores</h2>
+  
+                  <div class="input-box">
+                    <label>Total de colaboradores renumerados</label>
+                    <input class="texto" id="totColab" name="totColab" type="number" required />
+                  </div>
+      
+                  <div class="input-box">
+                    <label>Adjunte el listado de personal en pdf (especificar antigüedad, puesto, tipo de contrato y año de listado)</label>
+                    <input id="listadoPer" name="listadoPer" type="file" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>Desgloce de colaboradoras de 18 a 29 años</label>
+                    <input  class="texto"  id="" name="" type="number" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>Desgloce de colaboradoras de 30 a 59 años</label>
+                    <input  class="texto"  id="colFem30to59" name="colFem30to59" type="number" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>Desgloce de colaboradoras mayor de 60 años</label>
+                    <input  class="texto"  id="colFem60" name="colFem60" type="number" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>Desgloce de colaboradores de 18 a 29 años</label>
+                    <input  class="texto" id="" name="" type="number" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>Desgloce de colaboradores de 30 a 59 años</label>
+                    <input  class="texto"  id="colMasc30to59" name="colMasc30to59" type="number" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>Desgloce de colaboradores mayor de 60 años</label>
+                    <input  class="texto"  id="colMasc60" name="colMasc60" type="number" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>¿Cuántos de los colaboradores están en nómina?</label>
+                    <input  class="texto"  id="colNomina" name="colNomina" type="number" required />
+                  </div>
+      
+                  <div class="input-box3"> 
+                    <label>¿Cuántos de los colaboradores están en honorarios?</label>
+                    <input  class="texto"  id="colHonorarios" name="colHonorarios" type="number" required />
+                  </div>
+      
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+
+                <!--FORMULARIO Voluntariado-->
+          <div data-content id="voluntariado">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Voluntariado</h2>
+
+                <div class="input-box">
+                  <label>Total de voluntarios</label>
+                  <input  class="texto"  id="totVolun" name="totVolun" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Número de voluntarios que pueden recibir al mismo tiempo por cada centro de operación</label>
+                  <input  class="texto"  id="numVolun" name="numVolun" type="number" required />
+                </div>
+    
+                <div class="input-box">
+                  <label>Mencione las áreas o actividades en las que tiene apoyo de voluntariado</label>
+                  <textarea  class="texto"  name="areasActivi" id="areasActivi" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>¿Cuenta con actividades en las que podrían necesitar voluntariado?</label>
+                  <select id="actVolun" name="actVolun" required>
+                      <option value="">Seleccione una opción</option>
+                      <option value="SI">Si</option>
+                      <option value="No">No</option>
+                  </select>
+                </div>
+    
+                <div class="input-box">
+                  <label>¿En cuáles actividades?</label>
+                  <textarea  class="texto" name="actividades" id="actividades" rows="6" cols="40" required></textarea>
+                </div>
+
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+
+                          <!--FORMULARIO Redes, logros y reconocimientos-->
+          <div data-content id="redes">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Redes, logros y reconocimientos</h2>
+
+                <div class="input-box">
+                  <label>Ingrese el nombre de organismos o redes a las que pertenece</label>
+                  <textarea  class="texto"  name="rrgRedPert" id="rrgRedPert" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>Mencionar los reconocimientos recibidos por la institución en los ultimos 5 años</label>
+                  <textarea  class="texto"  name="recoRecib" id="recoRecib" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>Mencione los mayores logros de la institución</label>
+                  <textarea  class="texto"  name="mayoLogros" id="mayoLogros" rows="6" cols="40" required></textarea>
+                </div>
+    
+                <div class="input-box">
+                  <label>¿Considera que puede mencionar algo adicional que no hayamos preguntado y que sea algo significativo para el análisis de la institución y su trabajo?</label>
+                  <textarea  class="texto" name="adicional" id="adicional" rows="6" cols="40" required></textarea>
+                </div>
+
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+
+
+                    <!--FORMULARIO PAGINA WEB Y REDES SOCIALES-->
+          <div data-content id="adjuntos">
+            <form> 
+              <div class="product-card">
+                <h2 class="product-description">Documentos adjuntos</h2>
+      
+                  <div class="input-box">
+                    <label>Adjuntar el documento que contenga la presentación general de la institución</label>
+                    <input  class=""  id="presenGen" name="presenGen" type="file" required />
+                  </div>
+      
+                  <div class="input-box">
+                    <label>Adjuntar carta de intención</label>
+                    <input  class="cartaInt"  id="cartaInt" name="" type="file" required />
+                  </div>
+      
+      
+                  <div class="input-box">
+                    <label>Adjuntar primera carta de recomendación</label>
+                    <input  class=""  id="cartaRec1" name="cartaRec1" type="file" required />
+                  </div>
+      
+                  <div class="input-box">
+                    <label>Adjuntar segunda carta de recomendación</label>
+                    <input  class=""  id="cartaRec2" name="cartaRec2" type="file" required />
+                  </div>
+      
+      
+                  <div class="input-box">
+                    <label>Adjuntar acta constitutiva de la institución </label>
+                    <input  class=""  id="actConst" name="actConst" type="file" required />
+                  </div>
+      
+      
+                  <div class="input-box">
+                    <label>Adjuntar cédula fiscal de la institución </label>
+                    <input  class=""  id="ceduFiscal" name="ceduFiscal" type="file" required />
+                  </div>
+      
+      
+      
+                  <div class="input-box">
+                    <label>Adjuntar última publicación del Diario Oficial de la Federación, el nombre de la OSC tiene que estar señalado o resaltado en amarillo </label>
+                    <input  class=""  id="diarOfiFed" name="diarOfiFed" type="file" required />
+                  </div>
+      
+      
+      
+                  <div class="input-box">
+                    <label>Adjuntar el último informe anual de la institución, en caso de contar con éste </label>
+                    <input  class=""  id="inforAnualIns" name="inforAnualIns" type="file" required />
+                  </div>
+      
+      
+      
+                  <div class="input-box">
+                    <label>Adjuntar el último boletín informativo de la institución, en caso de contar con éste </label>
+                    <input  class=""  id="boletInfor" name="boletInfor" type="file" required />
+                  </div>
+      
+
+                  <div class="input-box">
+                    <label>Adjuntar el manifiesto firmado por representante legal y/o dirección general (Documento PDF, Peso Máximo 10MB) </label>
+                    <input  class=""  id="Manisfiesto" name="Manisfiesto" type="file" required />
+                  </div>
+      
+      
+      
+                  <h3 class="product-description">Comprobante de informe de transparencia entregado al SAT de los últimos 3 años </h3>
+      
+      
+                  <div class="input-box3">
+                    <label>Informe de transparencia: 2022</label>
+                    <input  id="informe22" name="informe22" type="file" required />
+                  </div>
+      
+      
+                  <div class="input-box3">
+                    <label>Informe de transparencia: 2021</label>
+                    <input  id="informe21" name="informe21" type="file" required />
+                  </div>
+      
+      
+                  <div class="input-box3">
+                    <label>Informe de transparencia: 2020</label>
+                    <input  id="informe20" name="informe20" type="file" required />
+                  </div>
+                <div class="send">
+                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+      
+
+
+
+    
+        
+
+          
+
+          
+
+          
 
           <div data-content id="redes"></div>
 
