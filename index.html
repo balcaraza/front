@@ -120,23 +120,23 @@
   
                 <div class="input-box">
                   <label>Nombre de la persona encargada de llenar el formulario. *</label>
-                  <input class="texto" id="" name="" type="text" required />
+                  <input class="texto" id="nomEnc" name="nomEnc" type="text" required />
                 </div>
         
                 <div class="input-box">
                   <label>Correo electrónico de la persona encargada de llenar el formulario. *</label>
-                  <input class="texto" id="" name="" type="text" required />
+                  <input class="texto" id="corrElec" name="corrElec" type="text" required />
                 </div>
   
                 <div class="input-box">
                 <label>Puesto de la persona encarga de llenar el formulario. *</label>
-                <input class="texto" id="" name="" type="text" required />
+                <input class="texto" id="puesto" name="puesto" type="text" required />
                 </div>
   
                 <div class="input-box">
                   <label>Telefono institucional y extensión de la persona encargada de llenar el formulario. *<label>
-                  <input class="texto"id="" type="p" name="" pattern="[0-9]{1,10}" placeholder="Telefono (55)-12-23-45-56" required> 
-                  <input class="texto"id="" type="number" name="" pattern="[0-9]{1,4}" placeholder="Extensión 7535" required> 
+                  <input class="texto"id="teleInst" type="p" name="teleInst" pattern="[0-9]{1,10}" placeholder="Telefono (55)-12-23-45-56" required> 
+                  <input class="texto"id="teleInst" type="number" name="teleInst" pattern="[0-9]{1,4}" placeholder="Extensión 7535" required> 
                 </div>
                 <div class="send">
                   <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
@@ -155,82 +155,82 @@
                 
                 <div class="input-box3">
                   <label>RFC de la institución</label>
-                  <input id="" name="" type="text" required />
+                  <input id="RFC" name="RFC" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>CLUNI de la institución</label>
-                  <input id="" name="" type="text"/>
+                  <input id="cluniInst" name="cluniInst" type="text"/>
                 </div>
   
                 <div class="input-box3">
                   <label>Nombre legal de la institución</label>
-                  <input id="" name="" type="text" required />
+                  <input id="NomInst" name="NomInst" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Figura juridica</label>
-                  <input id="" name="" type="text" required />
+                  <input id="figJuridi" name="figJuridi" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Estado de la República</label>
-                  <input id="" name="" type="text" required />
+                  <input id="estaRepublica" name="estaRepublica" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Nombre informal de la institución</label>
-                  <input id="" name="" type="text" required />
+                  <input id="nomInfInst" name="nomInfInst" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Esquema de atención</label>
-                  <input id="" name="" type="text" required />
+                  <input id="esqueAtencion" name="esqueAtencion" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Condiciones de la población atendida</label>
-                  <input id="" name="" type="" required />
+                  <input id="condicionPob" name="condicionPob" type="" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Genero de la poblacion atendida</label>
-                  <input id="" name="" type="text" required />
+                  <input id="genePob" name="genePob" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Fecha de constitución legal</label>
-                  <input id="" name="" type="date" required />
+                  <input id="fechaConsLeg" name="fechaConsLeg" type="date" required />
                 </div>
   
                 <div class="input-box3">
-                  <label>FEcha de primera autorizacion de la SHCP para emitir recibos deducibles de impuestos</label>
-                  <input id="" name="" type="date" required />
+                  <label>Fecha de primera autorizacion de la SHCP para emitir recibos deducibles de impuestos</label>
+                  <input id="fechaAut" name="fechaAut" type="date" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Direccion de la sede principal:</label>
-                  <input id="" name="" type="text" required />
+                  <input id="dirSedPrin" name="dirSedPrin" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Horario de la sede principal</label>
-                  <input id="" name="" type="text" required />
+                  <input id="horarioCons" name="horarioCons" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Ademas de la sede principal, ¿Cuántos centros de operacion tiene su intitución?</label>
-                  <input id="" name="" type="text" required />
+                  <input id="centrosOpera" name="centrosOpera" type="text" required />
                 </div>
   
                 <div class="input-box3">
                   <label>Anote la dirección de los diferentes centros de operacion</label>
-                  <input id="" name="" type="text" placeholder="Ejemplo:<br> Centro 1 y Direccion 1<br>Centro 2 y dirección 2"/>
+                  <input id="dirCentrOper" name="dirCentrOper" type="text" placeholder="Ejemplo:<br> Centro 1 y Direccion 1<br>Centro 2 y dirección 2"/>
                 </div>
   
                 <div class="input-box3">
                   <label>Especifique los horarios de atencion a beneficiarios por centro de operación</label>
-                  <input id="" name="" type="text"/>
+                  <input id="horaAtencion" name="horaAtencion" type="text"/>
                 </div>
                 <div class="send">
                   <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
@@ -253,31 +253,32 @@
                 </div>
                 <div class="input-box">
                   <label>Dirección de pagina web</label>
-                  <input class="texto" id="" type="url" name="" placeholder="www.ejemplo.com.mx" >
+                  <input class="texto" id="dirPagWeb" type="url" name="dirPagWeb" placeholder="www.ejemplo.com.mx" >
                 </div>
 
                 <div class="input-box">
                   <label>¿Cuenta con Twitter?</label><br><br>
-                  <label>Si<input class="radio" id="" type="radio" name="" value="si"></label>
+                  <label>Si<input class="radio" id="twitter" type="radio" name="twitter" value="si"></label>
                   <label>No<input class="radio" id="" type="radio" name="" value="no"></label>
                 </div>
+
                 <div class="input-box">
-                  <label>Dirección de twitterl</label>
-                  <input class="texto" id="" type=" url" name="" placeholder="twwiter.com/usuario" >
+                  <label>Dirección de twitter</label>
+                  <input class="texto" id="dirTwitter" type=" url" name="dirTwitter" placeholder="twwiter.com/usuario" >
                 </div>
                 <div class="input-box">
                   <label>¿Cuenta con Facebook?</label><br><br>
-                  <label >Si<input class="radio" id="" type="radio" name="" value="si"></label>
-                  <label >No<input class="radio" id="" type="radio" name="" value="no"></label>
+                  <label >Si<input class="radio" id="fb" type="radio" name="fb" value="si"></label>
+                  <label >No<input class="radio" id="fb" type="radio" name="fb" value="no"></label>
                 </div>
                 <div class="input-box">
                   <label>Dirección de Facebook</label>
-                  <input class="texto" id="" type="url" name="" placeholder="facebook.com/pagina" >
+                  <input class="texto" id="dirFb" type="url" name="dirFb" placeholder="facebook.com/pagina" >
                 </div>
 
                 <div class="input-box">
                   <label>Datos de otras redes sociales (YouTube, Instagram, etc.)</label>
-                  <input class="texto" id="" type="text" name="" >
+                  <input class="texto" id="otrasRedes" type="text" name="otrasRedes" >
                 </div>
                 <div class="send">
                   <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
@@ -288,52 +289,6 @@
           </div>
 
 
-<!--FORMULARIO PAGINA WEB Y REDES SOCIALES-->
-          <div data-content id="pagina">
-            <form> 
-              <div class="product-card">
-                <h2 class="product-description">Pagina web y redes sociales</h2>
-
-                <div class="input-box">
-                  <label>¿Cuenta con pagina web?</label><br><br>
-                  <label>Si<input class="radio" id="" type="radio" name="" value="si"></label>
-                  <label>No<input class="radio"id="" type="radio" name="" value="no"></label>
-                </div>
-                <div class="input-box">
-                  <label>Dirección de pagina web</label>
-                  <input class="texto" id="" type="url" name="" placeholder="www.ejemplo.com.mx" >
-                </div>
-
-                <div class="input-box">
-                  <label>¿Cuenta con Twitter?</label><br><br>
-                  <label>Si<input class="radio" id="" type="radio" name="" value="si"></label>
-                  <label>No<input class="radio" id="" type="radio" name="" value="no"></label>
-                </div>
-                <div class="input-box">
-                  <label>Dirección de twitterl</label>
-                  <input class="texto" id="" type=" url" name="" placeholder="twwiter.com/usuario" >
-                </div>
-                <div class="input-box">
-                  <label>¿Cuenta con Facebook?</label><br><br>
-                  <label >Si<input class="radio" id="" type="radio" name="" value="si"></label>
-                  <label >No<input class="radio" id="" type="radio" name="" value="no"></label>
-                </div>
-                <div class="input-box">
-                  <label>Dirección de Facebook</label>
-                  <input class="texto" id="" type="url" name="" placeholder="facebook.com/pagina" >
-                </div>
-
-                <div class="input-box">
-                  <label>Datos de otras redes sociales (YouTube, Instagram, etc.)</label>
-                  <input class="texto" id="" type="text" name="" >
-                </div>
-                <div class="send">
-                  <button class="send-button" :hover type="submit" name="Guardar y enviar">Guardar y enviar</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
 
           <!--FORMULARIO Modelo de atencion-->
           <div data-content id="modelo">
