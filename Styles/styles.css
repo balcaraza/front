@@ -154,6 +154,7 @@ body {
 
 .card:first-child {
   background-color: #00904f;
+
 }
 .card:nth-child(2) {
   background-color: #00529b;
@@ -298,7 +299,11 @@ body {
 
 
 /* ------------------------ funciones tabs -------------------------- */
-
+.card.active{
+  background-color: white;
+  color: #000000;
+  border: 2px solid #000000
+}
 [data-content]{
   display: none;
 }

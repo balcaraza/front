@@ -17,15 +17,16 @@ function closeSidebar() {
   }
 }
 
-const targets = document.querySelectorAll('[data-target]')
-const content = document.querySelectorAll('[data-content]')
+const targets = document.querySelectorAll('.card[data-target]');
+const content = document.querySelectorAll('.content [data-content]');
 
 targets.forEach(target => {
-	target.addEventListener('click', () => {
-		content.forEach(c => {
-			c.classList.remove('active')
-		})
-		const t = document.querySelector(target.dataset.target)
-		t.classList.add('active')
-	})
-})
+  target.addEventListener('click', () => {
+    targets.forEach(t => t.classList.remove('active'));
+    target.classList.add('active');
+
+    const targetContent = document.querySelector(target.dataset.target);
+    content.forEach(c => c.classList.remove('active'));
+    targetContent.classList.add('active');
+  });
+});
