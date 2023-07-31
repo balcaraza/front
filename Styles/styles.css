@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 38px;
   margin-bottom: 30px;
 }
 
@@ -83,6 +83,8 @@ body {
 
 .sidebar-brand > .material-icons-outlined {
   font-size: 50px;
+  padding: 20px 20px 20px 65px;
+  
 }
 
 .sidebar-list {
@@ -92,8 +94,8 @@ body {
 }
 
 .sidebar-list-item {
-  padding: 20px 20px 20px 20px;
-  font-size: 18px;
+  padding: 20px 1px 20px 5px;
+  font-size: 16px;
 }
 
 .sidebar-list-item:hover {
@@ -391,10 +393,21 @@ body {
 .input-box .radio{
   display: inline;
 }
+
+/*
 .send{
   align-items: center;
   display: flex;
 }
+*/
+
+.send{
+  align-items: center;
+  display: flex;
+  justify-content: center;  /*Ponerlo al centro */
+}
+
+/*
 .send-button{
   height: 55px;
   width: 50%;
@@ -407,8 +420,7 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: rgb(251, 255, 0); 
-}
+  background: rgb(251, 255, 0); */
 
 
 /* ------------------------ funciones tabs -------------------------- */
@@ -555,3 +567,496 @@ footer {
   }
   
 }
+
+
+/*------------------ESTILO FORMULARIO 2 COLUMNAS---------------------*/
+
+/* Estilos generales 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+*/
+
+/* Contenedor de la columna */
+.column2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  /*padding: 10px;*/
+  padding-right: 13px;
+  padding-left: 13px;
+
+  margin: 15px 10px;   /*Cambiar el espaciado entre columnas*/
+}
+
+/* Estilo para las etiquetas de texto */
+.column2 label {
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+/* Entrada de datos */
+.column2 input.texto {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  height: 21px; /* Altura reducida a 21px */
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff; /* Color blanco por defecto */
+}
+
+/* Estilo para el borde al enfocar la entrada de texto */
+.column2 input.texto:focus {
+  outline: none;
+  border-color: #6c63ff;
+  background-color: #fff;
+}
+
+/* Estilo para cuando el usuario ha ingresado texto */
+.column2 input.texto:valid {
+  background-color: #e1f5fe; /* Cambiar al color azul claro deseado */
+}
+
+/*---------------------------------------*/
+
+
+
+
+
+
+
+/*---------------ESTILO FORMULARIO 1 COLUMNA---------------------------*/
+
+
+/* Contenedor de la columna */
+.column1 {
+  flex-basis: 100%; /* Columna ocupa todo el ancho */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para las etiquetas de texto */
+.column1 label {
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Entrada de datos */
+.column1 input.texto {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  height: 21px;
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff;
+}
+
+/* Estilo para el borde al enfocar la entrada de texto */
+.column1 input.texto:focus {
+  outline: none;
+  border-color: #6c63ff;
+  background-color: #fff;
+}
+
+/* Estilo para cuando el usuario ha ingresado texto */
+.column1 input.texto:valid {
+  background-color: #e1f5fe;
+}
+
+/* Media Queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .column label {
+    font-size: 14px;
+  }
+  .column input.texto {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
+
+
+/*---------------+++++++++++++++======--------------------------*/
+
+/*---------------ESTILO FORMULARIO 3 COLUMNAS----------------------------*/
+
+
+/* styles.css */
+/* Estilos generales 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px; /* Ajustamos el padding en lugar del margin 
+}
+*/
+
+
+/* Contenedor de las filas */
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px; /* Ajustamos el margen entre filas */
+  padding-right: 5px;
+  padding-left: 15px;
+}
+
+/* Contenedor de la columna */
+.column3 {
+  flex-basis: 40%;
+  padding: 10px;
+  /*margin: 1px 8px; Cambiar la distancia entre filas el primero*/
+  
+}
+
+/* Estilo para las etiquetas de texto */
+.column3 label {
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Entrada de datos */
+.column3 input.texto {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  height: px; /* Altura reducida a 21px */
+  width: 90%;   .fila {   /*AJUSTAR EL LARGO DE LOS CUADROS DE TEXTO*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px; /* Ajustamos el margen entre filas */
+  }
+  
+  /* Contenedor de la columna */
+  .column3 {
+    flex-basis: 40%;
+    padding: 10px;
+    margin: 1px 8px; /*Cambiar la distancia entre filas el primero*/
+  }
+  
+  /* Estilo para las etiquetas de texto */
+  .column3 label {
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* Entrada de datos */
+  .column3 input.texto {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    height: px; /* Altura reducida a 21px */
+    width: 100%; 
+    border: 1px solid #110082;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff; /* Color blanco por defecto */
+  }
+  
+  /* Estilo para el borde al enfocar la entrada de texto */
+  .column3 input.texto:focus {
+    outline: none;
+    border-color: #6c63ff;
+    background-color: #fff;
+  }
+  
+  /* Estilo para cuando el usuario ha ingresado texto */
+  .column3 input.texto:valid {
+    background-color: #e1f5fe; /* Cambiar al color azul claro deseado */
+  }
+  
+  /* Media Queries para ajustar el diseño en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .row {
+      flex-wrap: wrap;
+    }
+    .column {
+      flex-basis: 100%;
+      margin-bottom: 15px; /* Ajustamos el margen inferior de las filas en pantallas más pequeñas */
+    }
+  }
+  border: 1px solid #110082;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff; /* Color blanco por defecto */
+}
+
+/* Estilo para el borde al enfocar la entrada de texto */
+.column input.texto:focus {
+  outline: none;
+  border-color: #6c63ff;
+  background-color: #fff;
+}
+
+/* Estilo para cuando el usuario ha ingresado texto */
+.column input.texto:valid {
+  background-color: #e1f5fe; /* Cambiar al color azul claro deseado */
+}
+
+/* Media Queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .column {
+    flex-basis: 100%;
+    margin-bottom: 15px; /* Ajustamos el margen inferior de las filas en pantallas más pequeñas */
+  }
+}
+
+
+
+/*---------------------===========================------------------*/
+
+
+
+/* Estilo para el boton enviar*/
+
+.GyE {
+  background-color: #0073ff; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+/* Agregar estilo para el hover, cambia el texo al pasar el cursor*/
+.GyE:hover {
+  color: rgba(0, 0, 0, 0.667);
+  
+}
+
+
+
+/* ------------------------ Botones para subir y visualizar archivo-------------------------- */
+
+/* Estilos para el contenedor del botón y el nombre del archivo */
+.upload-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Primera columna se ajusta al contenido (botón), segunda columna ocupa el espacio restante */
+  align-items: center;
+  gap: 10px; /* Espacio entre el botón y el cuadro del nombre del archivo */
+}
+
+/* Estilos para el botón */
+.upload-btn {
+  padding: 10px 20px;
+  
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content; /* Ancho ajustado al contenido */
+  
+  
+}
+
+/* Estilos para el icono */
+.upload-icon {
+  margin-right: 5px;
+}
+
+/* Estilos para el cuadro del nombre del archivo */
+.file-name-box {
+  padding: 8px 16px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #fbfafa;
+}
+
+/* Estilos para el botón de visualización */
+
+/*
+.view-btn {
+  display: inline-block;
+  padding: 5px 258px;
+  border: 2px solid #9accff;
+  border-radius: 5px;
+  background-color: #9accff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  width:0cm; /* Ancho ajustado al contenido 
+  white-space:nowrap; */
+
+  /* Estilos para el botón de visualización 2 COLUMNAS*/
+.view-btn {
+  display: inline-block;
+  /* padding: 5px 258px; Ajusta el padding según el espacio deseado entre el texto y el borde del botón */
+  padding-right: 242.25px;
+  padding-left: 242.25px;
+  border: 2px solid #9accff;
+  border-radius: 5px;
+  background-color: #9accff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content; /* Ancho ajustado al contenido */
+  white-space: nowrap;
+  margin-top: 10px; /* Espacio entre el botón de visualización y los botones de arriba */
+}
+
+ /* Estilos para el botón de visualización 3 COLUMNAS*/
+.view-btn3 {
+  display: inline-block;
+  padding: 5px 144px; /* Ajusta el padding según el espacio deseado entre el texto y el borde del botón */
+  border: 2px solid #9accff;
+  border-radius: 5px;
+  background-color: #9accff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content; /* Ancho ajustado al contenido */
+  white-space: nowrap;
+  margin-top: 10px; /* Espacio entre el botón de visualización y los botones de arriba */
+}
+  
+  
+
+
+/* Estilos para el icono de visualización */
+.view-icon {
+  margin-right: 5px;
+}
+
+
+/*----------------ESTILO BOTON DE DESCARGA------------- */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 144px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+  .TextoDownload{
+
+    text-align:center;
+  }
+
+
+
+  /*---------------------------- */
+
+
+/* Estilos para el icono del botón de descarga */
+.download-icon {
+  margin-right: 5px;
+}
+
+
+
+/*-------------------Estilo para SELECT DESPLEGABLE-------------------*/
+/* Estilos generales */
+/* Estilos generales 
+body1 {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+*/
+
+/* Estilo para el contenedor principal */
+.SelectStyle {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: -50px;
+  background-color: #ffffff00;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+}
+
+/* Estilo para las etiquetas de texto */
+.SelectStylelabel {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo para el select */
+.SelectStyle select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilo para las opciones del select */
+.SelectStyleoption {
+  color: #555;
+}
+
+/* Estilo para el borde al enfocar el select */
+.SelectStyle select:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+/* Estilo cuando se ha seleccionado una opción */
+.SelectStyle select:valid {
+  background-color: #ceedfa; /* Cambiar al color deseado */
+}
+
+/* Estilo cuando no se ha seleccionado nada */
+.SelectStyle select:invalid {
+  background-color: #ffffff; /* Cambiar al color deseado */
+}
+
+
+
+
+
+
+
