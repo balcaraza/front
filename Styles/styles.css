@@ -435,8 +435,40 @@ body {
   padding-bottom: 115px;
 }
 
+/*-------------home---------------*/
 
-/* FOOTER home*/
+
+
+.home-buttons button{
+  height: 55px;
+  width: 25%;
+  color: white;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  padding: 10px;
+  margin: 40px 10px 20px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-convocatoria{
+  background-color: #00904f;
+}
+.btn-convocatoria:hover{
+  background-color: whitesmoke;
+  color:#202338;
+  border: 3px solid #00904f;
+}
+.btn-registrar:hover{
+  background-color: whitesmoke;
+  color:#202338;
+  border: 3px solid gray;
+}
+.btn-registrar{
+  background-color: gray;
+}
 
 footer {
   grid-area: footer;
